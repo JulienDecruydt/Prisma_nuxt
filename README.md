@@ -26,16 +26,16 @@ npx prisma migrate dev --name "init"
 
 ## Prisma Commands
 
-| Command | Description |
-|---------|-------------|
-| `npx prisma generate` | Generate Prisma Client from schema. Run after modifying `schema.prisma`. |
-| `npx prisma migrate dev --name "name"` | Create and apply a new migration. Updates the database schema. |
-| `npx prisma migrate deploy` | Apply pending migrations in production. |
-| `npx prisma db push` | Push schema changes directly without creating a migration (dev only). |
-| `npx prisma db pull` | Pull the database schema into `schema.prisma` (introspection). |
-| `npx prisma studio` | Open Prisma Studio GUI to browse/edit data. |
-| `npx prisma db seed` | Run the seed script defined in `package.json`. |
-| `npx prisma migrate reset` | Reset database: drop all data, reapply migrations, run seed. |
+| Command                                | Description                                                              |
+| -------------------------------------- | ------------------------------------------------------------------------ |
+| `npx prisma generate`                  | Generate Prisma Client from schema. Run after modifying `schema.prisma`. |
+| `npx prisma migrate dev --name "name"` | Create and apply a new migration. Updates the database schema.           |
+| `npx prisma migrate deploy`            | Apply pending migrations in production.                                  |
+| `npx prisma db push`                   | Push schema changes directly without creating a migration (dev only).    |
+| `npx prisma db pull`                   | Pull the database schema into `schema.prisma` (introspection).           |
+| `npx prisma studio`                    | Open Prisma Studio GUI to browse/edit data.                              |
+| `npx prisma db seed`                   | Run the seed script defined in `package.json`.                           |
+| `npx prisma migrate reset`             | Reset database: drop all data, reapply migrations, run seed.             |
 
 ## Development
 
@@ -79,6 +79,6 @@ Fetch data from components:
 
 ```vue
 <script setup lang="ts">
-const { data: posts } = await useFetch('/api/posts')
+  const { data: posts } = await useFetch('/api/posts')
 </script>
 ```
