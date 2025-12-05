@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <h1>Dashboard</h1>
-    </div>
+  <div>
+    <h1>Dashboard</h1>
+  </div>
 </template>
 
 <script lang="ts" setup>
-    definePageMeta({
-        middleware: ['authentification'],
-    })
+  definePageMeta({
+    middleware: ['authentification'],
+  })
 </script>

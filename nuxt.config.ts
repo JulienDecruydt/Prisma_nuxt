@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     session: {
       maxAge: 60 * 10, // 10 minutes
       password: process.env.SESSION_PASSWORD || '',
-    }
-  }
+    },
+  },
 })

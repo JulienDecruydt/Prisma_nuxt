@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
       email: body.email,
     },
   })
-  
+
   if (!user) {
     throw createError({
       statusCode: 401,
